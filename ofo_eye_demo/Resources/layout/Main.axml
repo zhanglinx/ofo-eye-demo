@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
-</LinearLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <FrameLayout
+        android:layout_height="150dp"
+        android:layout_width="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/minions_btn_scan" />
+        <ImageView
+            android:layout_height="@dimen/dimen18"
+            android:layout_width="@dimen/dimen18"
+            android:src="@drawable/nes"
+            android:layout_marginTop="@dimen/dimen60"
+            android:layout_marginLeft="@dimen/dimen54"
+            android:layout_gravity="left"
+            android:id="@+id/lefteye" />
+        <ImageView
+            android:layout_height="@dimen/dimen18"
+            android:layout_width="@dimen/dimen18"
+            android:src="@drawable/nes"
+            android:layout_marginTop="@dimen/dimen60"
+            android:layout_marginRight="@dimen/dimen34"
+            android:layout_gravity="right"
+            android:id="@+id/righteye" />
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/minions_btn_scan_see" />
+    </FrameLayout>
+</RelativeLayout>
